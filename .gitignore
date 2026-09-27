@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+results_quick/
+figures_quick/
+report/generated_quick/
+report/*.aux
+report/*.log
+report/*.bbl
+report/*.blg
+report/*.out
+.venv/

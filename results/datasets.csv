@@ -1,0 +1,6 @@
+dataset,title,frequency,length,span,missing,mean,std,min,max,source
+airline,Airline Passengers,Monthly,144,1949-01--1960-12,0,280.2986111111111,119.9663169429432,104.0,622.0,"Box & Jenkins (1976), via github.com/jbrownlee/Datasets"
+sunspots,Monthly Sunspots,Monthly,2820,1749-01--1983-12,0,51.265957446808514,43.44897131307258,0.0,253.8,"SIDC/SILSO (Zurich series), via github.com/jbrownlee/Datasets"
+temperature,Min. Temperatures (Melbourne),Daily,3652,1981-01--1990-12,2,11.179586527929903,4.071481966074569,0.0,26.3,"Australian Bureau of Meteorology, via github.com/jbrownlee/Datasets"
+mackey_glass,Mackey-Glass (tau=17),Unit time step,1500,t=0--1499,0,0.9296946081167031,0.2265481121693548,0.419444297565427,1.3165605306806976,Synthetic: Mackey & Glass (1977) delay differential equation
+sp500,S&P 500 Index,Monthly,900,1950-01--2024-12,0,845.793857561102,1168.959288436541,16.88,6010.91,Shiller/S&P via github.com/datasets/s-and-p-500
