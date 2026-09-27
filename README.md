@@ -1,21 +1,20 @@
 
 
 ## Repository layout
-```
-data/        raw CSVs (committed so results never depend on upstream changes);
-             mackey_glass.csv is generated on first run
-src/data.py      loading, missing values, log/diff transforms, z-scaling, windows, ADF/KPSS
-src/cells.py     ElmanCell, JordanCell, MRNCell + SimpleRNN wrapper (shared output layer)
-src/cv.py        expanding-window CV folds + chronological early-stopping split
-src/train.py     Adam/MSE training, early stopping, weight decay, grad clipping,
-                 random search over CV folds, final 10-seed runs
-src/evaluate.py  RMSE/MAE/sMAPE, persistence baseline, Friedman/Nemenyi, Wilcoxon-Holm
-src/figures.py   all figures (PDF)            src/tables.py  LaTeX tables for the report
-tests/test_cells.py  unit tests (equations vs NumPy reference, fits a sine)
-results/     cached tuning JSONs, final-run .npz files, summary.json
-figures/     report figures              report/  PDF
-run_all.py   one command for everything
-```
+data/ -> raw CSVs (committed so results never depend on upstream changes);  mackey_glass.csv is generated on first run
+src/data.py -> loading, missing values, log/diff transforms, z-scaling, windows, ADF/KPSS
+src/cells.py -> ElmanCell, JordanCell, MRNCell + SimpleRNN wrapper (shared output layer)
+src/cv.py -> expanding-window CV folds + chronological early-stopping split
+src/train.py -> Adam/MSE training, early stopping, weight decay, grad clipping, random search over CV folds, final 10-seed runs
+src/evaluate.py -> RMSE/MAE/sMAPE, persistence baseline, Friedman/Nemenyi, Wilcoxon-Holm
+src/figures.py -> all figures (PDF)
+src/tables.py  -> LaTeX tables for the report
+tests/test_cells.py -> unit tests (equations vs NumPy reference, fits a sine)
+results/ -> cached tuning JSONs, final-run .npz files, summary.json
+figures/ -> report figures 
+report/ -> PDF
+run_all.py one command for everything
+
 
 ## Running on Windows (WSL) or Linux
 ```bash
